@@ -80,8 +80,8 @@ limitations under the License.
         <property name="javac.encoding" value="utf-8" />
 
         <!-- bountycastle properties, ivy signing with pgp, git tasks self-bootstrapping -->
-        <property name="bountycastle.version" value="1.45"/>
-        <property name="bountycastle.classifier" value="jdk16"/>
+        <property name="bountycastle.version" value="1.60"/>
+        <property name="bountycastle.classifier" value="jdk15on"/>
         <property name="bcpg.jar.file" value="bcpg-${bountycastle.classifier}-${bountycastle.version}.jar"/>
         <property name="bcprov.jar.file" value="bcprov-${bountycastle.classifier}-${bountycastle.version}.jar"/>
 
