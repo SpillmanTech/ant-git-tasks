@@ -73,7 +73,7 @@ public class MergeTask extends AbstractGitRepoAwareTask {
         public void doExecute() {
                 try {
                         MergeCommand mergeCommand = git.merge().setSquash(squash);
-                        mergeCommand.include(mergeCommand.getRepository().getRef(branchname));
+                        mergeCommand.include(mergeCommand.getRepository().findRef(branchname));
 
                         setupCredentials(mergeCommand);
 
